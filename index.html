@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peakmetric - Influencer Performance Tracker</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Outfit', sans-serif; color: #1a1a2e; background: #ffffff; line-height: 1.6; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+
+        header { padding: 20px 0; border-bottom: 1px solid #fef3c7; }
+        .header-inner { display: flex; align-items: center; justify-content: space-between; }
+        .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+        .logo-icon { width: 36px; height: 36px; background: linear-gradient(135deg, #d97706, #f59e0b); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 18px; }
+        .logo-text { font-size: 22px; font-weight: 700; color: #1a1a2e; }
+        nav a { margin-left: 28px; text-decoration: none; color: #64748b; font-weight: 500; font-size: 15px; }
+        nav a:hover { color: #d97706; }
+
+        .hero { padding: 80px 0 60px; text-align: center; }
+        .hero h1 { font-size: 48px; font-weight: 700; line-height: 1.15; margin-bottom: 20px; color: #0f172a; }
+        .hero h1 span { color: #d97706; }
+        .hero p { font-size: 19px; color: #64748b; max-width: 600px; margin: 0 auto 36px; }
+        .cta-btn { display: inline-block; padding: 14px 36px; background: linear-gradient(135deg, #d97706, #f59e0b); color: white; text-decoration: none; border-radius: 12px; font-weight: 600; font-size: 16px; transition: transform 0.2s; }
+        .cta-btn:hover { transform: translateY(-2px); }
+
+        .features { padding: 60px 0; }
+        .features h2 { text-align: center; font-size: 34px; font-weight: 700; margin-bottom: 48px; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
+        .feature-card { padding: 32px; border-radius: 16px; border: 1px solid #fef3c7; background: #fffbeb; transition: box-shadow 0.2s; }
+        .feature-card:hover { box-shadow: 0 8px 24px rgba(217, 119, 6, 0.1); }
+        .feature-icon { width: 48px; height: 48px; background: linear-gradient(135deg, #d97706, #f59e0b); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 18px; font-size: 22px; }
+        .feature-card h3 { font-size: 19px; font-weight: 600; margin-bottom: 10px; }
+        .feature-card p { color: #64748b; font-size: 15px; }
+
+        .how-it-works { padding: 60px 0; background: #fef9ee; border-radius: 24px; margin: 40px 0; }
+        .how-it-works h2 { text-align: center; font-size: 34px; font-weight: 700; margin-bottom: 48px; }
+        .steps { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; padding: 0 16px; }
+        .step { text-align: center; max-width: 260px; }
+        .step-num { width: 48px; height: 48px; background: #d97706; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 20px; margin: 0 auto 16px; }
+        .step h3 { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+        .step p { color: #64748b; font-size: 14px; }
+
+        footer { padding: 40px 0; border-top: 1px solid #fef3c7; margin-top: 60px; text-align: center; }
+        footer a { color: #64748b; text-decoration: none; margin: 0 16px; font-size: 14px; }
+        footer a:hover { color: #d97706; }
+        .footer-copy { color: #94a3b8; font-size: 13px; margin-top: 16px; }
+
+        @media (max-width: 768px) { .hero h1 { font-size: 32px; } nav { display: none; } .steps { gap: 32px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <div class="logo-icon">P</div>
+                <span class="logo-text">Peakmetric</span>
+            </a>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Track your <span>influencer</span> performance</h1>
+            <p>Peakmetric gives creators and brands the tools to measure TikTok influence. Monitor engagement rates, audience growth, and content impact — all in one place.</p>
+            <a href="#" class="cta-btn">Track Your Impact</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Built for Creators & Brands</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Engagement Score</h3>
+                    <p>Get a single performance score based on your likes, comments, shares, and views. Compare across time periods to see if you're improving.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Follower Analytics</h3>
+                    <p>Track follower growth trends, identify spikes, and understand what content drives new followers to your profile.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎬</div>
+                    <h3>Video Breakdown</h3>
+                    <p>Deep-dive into each video's performance. See views, engagement rate, and how each post contributes to your overall growth.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Creator Profile</h3>
+                    <p>A polished overview of your TikTok presence — bio, stats, verification status, and key metrics in a shareable format.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📉</div>
+                    <h3>Trend Detection</h3>
+                    <p>Spot upward and downward trends in your metrics before they become obvious. Stay ahead of changes in your audience behavior.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📑</div>
+                    <h3>Export Reports</h3>
+                    <p>Generate professional performance reports for brand partnerships, sponsorship pitches, or personal records.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <h3>Link Your TikTok</h3>
+                    <p>Securely connect your account through TikTok's official Login Kit authorization.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <h3>Analyze Performance</h3>
+                    <p>We pull your profile, stats, and videos to calculate engagement scores and growth trends.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <h3>Grow & Report</h3>
+                    <p>Use insights to improve your content strategy and generate reports for brand deals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div>
+                <a href="terms.html">Terms of Service</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Peakmetric. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
